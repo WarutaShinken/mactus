@@ -22,7 +22,7 @@ try {
     Set-Location cactus-blockchain-gui
 
     $ErrorActionPreference = "SilentlyContinue"
-    npm ci --loglevel=error
+    npm i --loglevel=error
     npm audit fix
     npm run build
     py ..\installhelper.py

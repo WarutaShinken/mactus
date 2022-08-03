@@ -62,7 +62,7 @@ do_install_npm_locally(){
       npm install
     else
       echo "npm ci"
-      npm ci
+      npm i
     fi
     export N_PREFIX=${SCRIPT_DIR}/.n
     PATH="${N_PREFIX}/bin:$(npm bin):${PATH}"
