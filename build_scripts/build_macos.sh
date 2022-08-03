@@ -35,7 +35,7 @@ cd cactus-blockchain-gui || exit
 
 echo "npm build"
 lerna clean -y
-npm ci
+npm i
 # Audit fix does not currently work with Lerna. See https://github.com/lerna/lerna/issues/1663
 # npm audit fix
 npm run build
