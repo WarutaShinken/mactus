@@ -13,7 +13,7 @@ echo "Cactus Installer Version is: $CACTUS_INSTALLER_VERSION"
 
 echo "Installing npm and electron packagers"
 cd npm_macos || exit
-npm ci
+npm i
 PATH=$(npm bin):$PATH
 cd .. || exit
 
